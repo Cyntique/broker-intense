@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intense | Broker de Seguros</title>
+    <meta name="description" content="¿Encontraste el seguro que buscabas? Consultá con un asesor profesional que te guiará para encontrar el seguro ideal"/>
+    <meta name="keywords" content="asesor de seguros, seguros para auto, seguros para motos, seguros de vida">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/mdb.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+  </head>
+  <body id="top">
+    <header>
+      <!-- Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+        <div class="container"><a class="navbar-brand" href="#">
+          <img class="logo" src="./img/intense-logo.png" alt="Logo Intense"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul><a class="btn btn-primary btn-rounded my-0" href="denuncia-siniestros.html" target="_blank">Siniestros</a>
+            <a class="phone btn btn-rounded my-0" href="https://wa.me/541134234620" target="_blank"><i class="fa fa-brands fa-whatsapp"></i> 1134234620</a>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- Intro Section-->
+      <section class="view hm-gradient" id="intro">
+        <video  src="./videos/video-banner.mp4" type="videos/mp4" autoplay muted loop id="video-fondo">
+          
+        </video>
+
+        <div class="site-bg-img d-flex align-items-center">
+          <div class="container">
+            <div class="row no-gutters">
+              
+              <div class="col-md-10 col-lg-6 text-center text-md-left margins">
+                <div class="white-text textos-banner wow fadeInLeft" data-wow-delay="0.3s"">
+                  <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                    <h1 class="h1-responsive font-weight-bold mt-sm-5 espacio-top">Nadie te cuida mejor que vos mismo</h1>
+                    <div class="h6">
+                     Por eso te brindamos nuestra experiencia y conocimientos para que encuentre las
+                     mejores coberturas de seguros a tu alcance. 
+                     Protegé lo que más te importa
+                    </div>
+                  </div><br>
+                  <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                    <a class="btn btn-outline-white" data-toggle="modal" data-target="#modal1" href="#">COTIZAR</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+  <!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1">Cotiza tu vehículo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="cotizar" id="formCotizar">
+          <div class="row">
+            <div class="col">
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="">
+            </div>
+            <div class="col">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="dni">DNI</label>
+              <input type="text" class="form-control" placeholder="" id="dni">
+            </div>
+            <div class="col">
+              <label for="cp">Código Postal</label>
+              <input type="text" class="form-control" id="cp" placeholder="">
+            </div>
+          </div>
+          <div class="row">
+          <div class="col">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="" required autocomplete="email">
+          </div>
+        </div>
+          <div class="row">
+            <div class="col">
+              <label for="patente">Patente</label>
+              <input type="text" class="form-control" id="patente" placeholder="">
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col">
+              <label for="gnc">¿Funciona con GNC?</label>
+              <select name="gnc" id="gnc">
+                <option value="si">Si</option>
+                <option value="si">No</option>
+                <option value="si">Tengo una moto</option>
+              </select>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col">
+            <label for="comercial">¿Se usa con fines comerciales?</label>
+            <select name="comercial" id="comercial">
+              <option value="si">Si</option>
+              <option value="si">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="alarma">¿Posee alarma?</label>
+            <select name="alarma" id="alarma">
+              <option value="si">Si</option>
+              <option value="si">No</option>
+            </select>
+          </div>
+        </div>
+        
+        
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-cerrar" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="EnviarFormulario()">Enviar</button>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  
+          
+    <div id="content">
+
+<section class="text-center py-5 black" id="about">
+  <div class="container">
+    <div class="wow fadeIn">
+      <h2 class="h1 pt-5 pb-3 white-text">Confíe en profesionales <br>especializados en seguros</h2>
+      <p class="px-5 mb-5 pb-3 lead white-text">
+        Los accidentes y sucesos imprevistos pasan por eso debemos estar resguardados.
+        Planificar puede ayudarte a atravesar los procesos díficiles y facilitar soluciones cuando más lo necesites.
+        Acceda a nuestros servicios de forma rápida y eficiente. Pida una cotización o infórmenos en caso de precisar ayuda
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".3s">
+        <i class="fa fa-usd fa-3x dorado"></i>
+        <p class="mt-3 white-text">
+          Buscamos la mejor solución para lo usted necesita. Solicite cotización sin compromiso
+        </p>
+        
+        <a href="https://wa.me/541134234620" class="btn-action">Cotizar</a>
+      </div>
+      <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".4s">
+        <i class="fa fa-file-text fa-3x dorado"></i>
+        <p class="mt-3 white-text">
+          Si es asociado y ha sufrido un accidente de tránsito o doméstico, por favor infórmenos para que podamos asistirlo
+        </p>
+        <a href="#" class="btn-action">Siniestros</a>
+      </div>
+      <div class="col-md-4 mb-5 wow fadeInUp" data-wow-delay=".5s"> 
+        <i class="fa fa-exclamation-triangle fa-3x dorado"></i>
+        <p class="mt-3 white-text">
+          Si precisa del servicio de remolque o asistencia, solícitelo a través de su empresa aseguradora. Toque en el botón SOS para ver los 
+          números de teléfono
+        </p>
+        <a href="sos.html" class="btn-action">SOS</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5" id="projects-inicio">
+  <div class="container">
+    <div class="wow fadeIn">
+      <h2 class="text-center h1 my-4 white-text">Trabajamos para brindar un servicio de excelencia</h2>
+      <p class="px-5 mb-5 pb-3 lead text-center white-text">
+       Somos asesores de seguros de primer nivel capacitados para brindarle la mejor cobertura que usted necesita.
+       Contamos con una amplia oferta de empresas de seguros automotor, vivienda y comercios. 
+       Conformamos un grupo de profesionales dedicados a brindarle tranquilidad y respaldo cuando más lo necesita
+        
+      </p>
+    </div>
+    <div class="row wow fadeInLeft" data-wow-delay=".3s">
+      <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5">
+        <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/728894628?h=852d79665b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Intense - Broker de seguros"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4">
+        <div class="row mb-3">
+          <div class="col-1 mr-1"><i class="fa fa-check fa-2x white-text"></i></div>
+          <div class="col-10">
+            <h5 class="font-weight-bold">Responsabilidad</h5>
+            <p class="white-text">
+             Invertimos nuestro mayor esfuerzo en brindarle las respuestas en el tiempo y forma que la situación lo requiera.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-1 mr-1"><i class="fa fa-check fa-2x white-text"></i></div>
+          <div class="col-10">
+            <h5 class="font-weight-bold">Ética</h5>
+            <p class="white-text">
+              No sólo nos apegamos a las leyes y regulaciones obligatorias sino que también nos guían principios 
+              basados en la ética profesional y personal. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 mr-1"><i class="fa fa-check fa-2x white-text"></i></div>
+          <div class="col-10">
+            <h5 class="font-weight-bold">Transparencia</h5>
+            <p class="white-text">
+              Claridad desde el principio, sin costos ocultos, sin letra chica. Desde el comienzo aclaramos y marcamos
+              todas la pautas que usted debe saber de sus servicios. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    </div>
+    </section>
+
+  <section class="py-5 empresas">
+    <div class="container">
+      <div class="wow fadeIn">
+        <h2 class="text-center h1 my-4 white-text">Empresas en las que confiamos</h2>
+        <img src="./img/empresas.png" alt="Compañias de seguros">
+         
+        </div>      
+  </section>
+
+<section class="testimonial">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <p>"Gracias a ustedes y a la firma fueron muy amables y solidarios".
+                </p>
+                
+                <div id="image-caption">Pablo Heckmann</div>
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <p>"Muy buena atencion y servicios , excelente".</p>
+                 
+                  <div id="image-caption">Marcela Ceñal</div>
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <p>"Muchas gracias por todo lo que hizo. Muy recomendable la compañia de seguros
+                  y usted como asesor"
+                </p>
+                  
+                  <div id="image-caption">Horacio Fernandez</div>
+              </div>   
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <i class='fa fa-arrow-left flechas'></i>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <i class='fa fa-arrow-right flechas'></i>
+          </a>
+        </div>
+        
+      </section>
+
+
+
+    <footer class="page-footer center-on-small-only pt-0 mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mb-5 flex-center"><a class="px-3" href="#"><i class="fa fa-facebook fa-lg white-text"></i></a><a class="px-3" href="#"><i class="fa fa-instagram fa-lg white-text"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3 font-small">
+        <div class="container-fluid">
+          <div>&copy; <a href="undefined/">Material Landing</a> - Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="scripts/mdb.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script>new WOW().init();</script>
+  </body>
+</html>
