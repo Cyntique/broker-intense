@@ -18,7 +18,7 @@ if(isset($_POST['ContactoEnviar']) && !empty($_POST['name']) && !empty($_POST['e
     $to     = 'jose@intensebroker.com';
     $subject= 'Solicitud de cotización';
     
-    $htmlContent = '
+    $htmlContent = '<tbody>
     <h4>¡Te solicitan una nueva cotización! A continuación los datos ingresados</h4>
     <table cellspacing="0" style="width: 300px; height: 200px;">
         <tr>
@@ -51,11 +51,12 @@ if(isset($_POST['ContactoEnviar']) && !empty($_POST['name']) && !empty($_POST['e
         <tr>
             <th>¿Posee Alarma?:</th><td>'.$alarma.'</td>
         </tr>
-    </table>';
+    </table>
+    </tbody>';
     
     // Set content-type header for sending HTML email
     $headers = "MIME-Version: 1.0" . "rn";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "rn";
+    $headers .= "Content-type:text/html; charset=UTF-8" . "rn";
     
     // Additional headers
     $headers .= 'From: CodexWorld<sender@example.com>' . "rn";
