@@ -15,7 +15,7 @@ if(isset($_POST['ContactoEnviar']) && !empty($_POST['name']) && !empty($_POST['e
     /*
      * Send email to admin
      */
-    $to     = 'info@netcy.ar';
+    $to     = 'jose@intensebroker.com';
     $subject= 'Solicitud de cotización';
     
     $htmlContent = '
