@@ -18,7 +18,7 @@ if(isset($_POST['ContactoEnviar']) && !empty($_POST['name']) && !empty($_POST['e
     $to     = 'info@netcy.ar';
     $subject= 'Solicitud de cotización';
     
-    $htmlContent = '<tbody>
+    $htmlContent = '<html>
     <h4>¡Te solicitan una nueva cotización! A continuación los datos ingresados</h4>
     <table cellspacing="0" style="width: 300px; height: 200px;">
         <tr>
@@ -52,11 +52,11 @@ if(isset($_POST['ContactoEnviar']) && !empty($_POST['name']) && !empty($_POST['e
             <th>¿Posee Alarma?:</th><td>'.$alarma.'</td>
         </tr>
     </table>
-    </tbody>';
+    </html>';
     
     // Set content-type header for sending HTML email
     $headers = "MIME-Version: 1.0" . "rn";
-    $headers .= "Content-type:text/html; charset=UTF-8" . "rn";
+    $headers .= "Content-type: text/html; charset=\"UTF-8\"\r\nContent-Transfer-Encoding: 8bit\r\n";
     
     // Additional headers
     $headers .= 'From: CodexWorld<sender@example.com>' . "rn";

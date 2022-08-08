@@ -42,9 +42,9 @@ function EnviarFormulario(){
                     $('#email').val('');
                     $('#dni').val('')
                     $('#patente').val('');
-                    $('#gnc:selected').text('');
-                    $('#comercial:selected').text('');
-                    $('#alarma:selected').text('');
+                    $('#gnc:selected').text();
+                    $('#comercial:selected').text();
+                    $('#alarma:selected').text();
                     $('.statusMsg').html('<span style="color:green;">Gracias por contactarnos, nos pondremos en contacto con usted pronto.</p>');
                 }else{
                     $('.statusMsg').html('<span style="color:red;">Ha ocurrido algún problema, por favor intente de nuevo.</span>');
