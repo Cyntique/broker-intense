@@ -6,7 +6,7 @@ $correo = $_POST['email'];
 $mensaje = $_POST['message'];
 
 // Datos para el correo
-$destinatario = "info@netcy.ar";
+$destinatario = "jose@intensebroker.com";
 $asunto = "Mensaje de la página de contacto";
 
 $carta = "De: $nombre \n"; 

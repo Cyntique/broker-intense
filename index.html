@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="css/mdb.css?ver=1.1.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
@@ -76,7 +76,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="./scripts/forms.php" class="cotizar" method="POST">
+        <form action="forms.php" class="cotizar" method="POST" accept-charset="UTF-8">
           <div class="md-form">
           <div class="row">
             <div class="col">
@@ -101,13 +101,13 @@
           <div class="row">
           <div class="col">
             <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" placeholder="" required autocomplete="email">
+            <input type="text" class="form-control" id="email" name="email" placeholder="" required="required" autocomplete="email">
           </div>
         </div>
           <div class="row">
             <div class="col">
               <label for="patente">Patente</label>
-              <input type="text" class="form-control" id="patente" placeholder="">
+              <input type="text" class="form-control" id="patente" name="patente" placeholder="">
             </div>
           </div> 
            
@@ -115,25 +115,25 @@
             <div class="row margin-row">
               <label for="gnc" >¿Funciona con GNC?</label>
               <select name="gnc" id="gnc" >
-                <option value="si">Si</option>
-                <option value="si">No</option>
-                <option value="si">Tengo una moto</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+                <option value="Tengo una moto">Tengo una moto</option>
               </select>
             </div>
          
         <div class="row margin-row">
             <label for="comercial">¿Se usa con fines comerciales?</label>
             <select name="comercial" id="comercial" >
-              <option value="si">Si</option>
-              <option value="si">No</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
             </select>
           </div>
        
         <div class="row margin-row">
             <label for="alarma">¿Posee alarma?</label>
             <select name="alarma" id="alarma">
-              <option value="si">Si</option>
-              <option value="si">No</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
             </select>
         </div>
       </div>
