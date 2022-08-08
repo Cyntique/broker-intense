@@ -108,9 +108,17 @@ h5{
 
 .modal-content{
   background-color: #444;
+  padding-left: 1rem;
 }
 
+.modal-content label{
+  position: inherit;
+ 
+}
 
+.margin-row{
+  margin-bottom: 1rem;
+}
 
 h5.modal-title{
    font-family: 'Narkisim';
@@ -350,7 +358,12 @@ i.flechas{
   margin-top: 2rem;
 }
 
+#envio{
+  height: 100vh;
+  margin-top: 6rem;
+  background-color: #333333;
 
+}
 #pricing .lead {
   opacity: 0.7; }
 

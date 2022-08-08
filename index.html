@@ -76,26 +76,26 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" action="./scripts/forms.php" class="cotizar" id="formCotizar">
-         
+        <form action="./scripts/forms.php" class="cotizar" method="POST">
+          <div class="md-form">
           <div class="row">
             <div class="col">
               <label for="name">Nombre</label>
-              <input type="text" class="form-control" id="name" placeholder="">
+              <input class="form-control" id="name" type="text" name="name" required="required"/>
             </div>
             <div class="col">
               <label for="apellido">Apellido</label>
-              <input type="text" class="form-control" id="apellido" placeholder="">
+              <input class="form-control" id="apellido" type="text" name="apellido" required="required"/>
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label for="dni">DNI</label>
-              <input type="text" class="form-control" placeholder="" id="dni">
+              <input type="text" class="form-control" type="number" id="dni" name="dni">
             </div>
             <div class="col">
               <label for="cp">Código Postal</label>
-              <input type="text" class="form-control" id="cp" placeholder="">
+              <input type="text" class="form-control" id="cp" name="cp" placeholder="" required="required">
             </div>
           </div>
           <div class="row">
@@ -110,47 +110,47 @@
               <input type="text" class="form-control" id="patente" placeholder="">
             </div>
           </div> 
-          <div class="row">
-            <div class="col">
-              <label for="gnc">¿Funciona con GNC?</label>
-              <select name="gnc" id="gnc">
+           
+          <div class="col">
+            <div class="row margin-row">
+              <label for="gnc" >¿Funciona con GNC?</label>
+              <select name="gnc" id="gnc" >
                 <option value="si">Si</option>
                 <option value="si">No</option>
                 <option value="si">Tengo una moto</option>
               </select>
             </div>
-          </div>
-        <div class="row">
-          <div class="col">
+         
+        <div class="row margin-row">
             <label for="comercial">¿Se usa con fines comerciales?</label>
-            <select name="comercial" id="comercial">
+            <select name="comercial" id="comercial" >
               <option value="si">Si</option>
               <option value="si">No</option>
             </select>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
+       
+        <div class="row margin-row">
             <label for="alarma">¿Posee alarma?</label>
             <select name="alarma" id="alarma">
               <option value="si">Si</option>
               <option value="si">No</option>
             </select>
-          </div>
+        </div>
+      </div>
+       
         </div>
         
-        
-        </form>
         <div class="modal-footer">
           <button type="button" class="btn btn-cerrar" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary" onclick="EnviarFormulario()">Enviar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
         </div>
         </div>
       </div>
       
     </div>
   </div>
-</div>
+
   
           
     <div id="content">
@@ -306,7 +306,7 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.min.js?ver=1.1.0"></script>
     <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
     <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
