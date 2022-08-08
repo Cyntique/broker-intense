@@ -1,6 +1,14 @@
 root{
   --colorprincipal: rgb(239, 184, 16);
   --clor-gris: rgb(138, 149, 151);
+  --header_font-family: 'Narkisim';
+}
+
+.cog-form_content{
+  background-color: #d7d7d7;
+}
+.pag-siniestros{
+  background-color: #d7d7d7;
 }
 
 .dorado{
