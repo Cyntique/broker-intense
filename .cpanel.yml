@@ -1,3 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/intenseb/public_html/
+    - /bin/rsync -av p broker-intense/ $DEPLOYPATH
