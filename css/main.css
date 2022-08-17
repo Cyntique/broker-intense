@@ -311,6 +311,26 @@ i.flechas{
   text-align: left;
 }
 
+
+
+#envio{
+  height: 100vh;
+  margin-top: 6rem;
+  background-color: #333333;
+
+}
+#pricing .lead {
+  opacity: 0.7; }
+
+#pricing .card-image {
+  background: url("../img/architecture.jpg") no-repeat center center; }
+
+#pricing ul li {
+  font-size: 1.1em; }
+
+
+/*******Pagina SOS***/
+
 .select-empresa{
   display: flex;
   flex-direction: row;
@@ -342,7 +362,6 @@ i.flechas{
   
 }
 
-
 .botones-sos{
   color: white;
   border: solid 2px white;
@@ -359,17 +378,24 @@ i.flechas{
   margin-top: 2rem;
 }
 
-#envio{
-  height: 100vh;
-  margin-top: 6rem;
-  background-color: #333333;
-
+.dato{
+  display: none;
 }
-#pricing .lead {
-  opacity: 0.7; }
 
-#pricing .card-image {
-  background: url("../img/architecture.jpg") no-repeat center center; }
 
-#pricing ul li {
-  font-size: 1.1em; }
+footer img{
+  max-width: 5rem;
+}
+footer .redes{
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+footer .isocial{
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+footer .firma{
+  padding-top: 1rem;
+}

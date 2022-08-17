@@ -62,10 +62,11 @@
       NOTA: LOS TRASLADOS SE PROGRAMAN EN EL MOMENTO Y NO CON TURNO. 
       Tenga en cuenta que en épocas vacacionales los servicios suelen verse reducidos.
     </p>
-    <div class="wow fadeIn">
+    <!--div class="wow fadeIn">
       <div class="row select-empresa">
       <label for="empresas">Seleccione su empresa de seguros:</label>
-          <select name="empresas" id="lista-empresas">
+          <select name="empresas"  id="lista-empresas" onchange="seleccion()">
+            <option value="none">Seleccione de la lista</option>
             <option value="atm">ATM Seguros</option>
             <option value="lanueva">La Nueva</option>
             <option value="rivadavia">Seguros Rivadavia</option>
@@ -76,7 +77,25 @@
           </select>
    
     </div>
+    </div-->
+
+
+    <div class="wow fadeIn"> 
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-primary btn-lg"  onclick="elige(1)">ATM Seguros</button>
+        <button type="button" class="btn btn-primary btn-lg"  onclick="elige(2)">La Nueva</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="elige(3)">Seguros Rivadavia</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="elige(4)">RUS Río Uruguay</button>
+      </div>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-primary btn-lg"  onclick="elige(5)">Federación Patronal</button>
+        <button type="button" class="btn btn-primary btn-lg"  onclick="elige(6)">Providencia Seguros</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="elige(7)">Zurich</button>
+      </div>
+
     </div>
+  
+
     <section class="dato" id="dato-atm">
       <section class="primero">
         <h4>Emergencias y remolque</h4>
@@ -96,29 +115,151 @@
     </section>
 
     </section>
+    <section class="dato" id="dato-lanueva">
+      <section class="primero">
+        <h4>Emergencias y remolque</h4>
+        <h3 class="white-text">La nueva</h3>
+        <img class="logos" src="img/logos/la-nueva-logo.png" alt="ATM Seguros"><br>
+      </section>
+     <section class="telefonos">
+      <a class="botones-sos" href="tel:08003451240" target="_blank"><i class="fa fa-phone"></i>0800-333-4455</a>
+      <p class="white-text text-center">
+        Por Whastapp: 1163570000 <a href="https://wa.me/541163570000">Ir al Whastapp</a><br>
+        Remolques Libertad: 0800 222 600 (Lunes a Domingo 6 a 24hs<br>
+        Interassist travel: <a href="tel:08003330550">0800 333 0550</a><br>
+      </p>
+      </section>
     </section>
 
+    <section class="dato" id="dato-rivadavia">
+      <section class="primero">
+        <h4>Emergencias y remolque</h4>
+        <h3 class="white-text">Seguros Rivadavia</h3>
+        <img class="logos" src="img/logos/seguros-rivadavia.png" alt="Seguros Rivadavia"><br>
+      </section>
+     <section class="telefonos">
+      <a class="botones-sos" href="tel:08006666789" target="_blank"><i class="fa fa-phone"></i>0800-666-6789</a>
+      <p class="white-text text-center">
+        Por Whastapp: 1128080012 <a href="https://wa.me/541128080012">Ir al Whastapp</a><br>
+        Países límitrofes<br>
+        Desde Uruguay: 000 405-4549 <br>
+        Desde Bolivia: 800 100-201<br>
+        Desde Chile: 800 104-5555<br>
+        Desde Brasil: 800 892-3680<br>
+      </p>
+      </section>
+    </section>
+
+    <section class="dato" id="dato-riouruguay">
+      <section class="primero">
+        <h4>Emergencias y remolque</h4>
+        <h3 class="white-text">Río Uruguay Seguros</h3>
+        <img class="logos" src="img/logos/logo-rio-uruguay.png" alt="Río Uruguay"><br>
+      </section>
+     <section class="telefonos">
+      <a class="botones-sos" href="tel:08004441441" target="_blank"><i class="fa fa-phone"></i>0800-444-1441</a>
+      <p class="white-text text-center">
+        <strong>Atención al asegurado: 0810 888 7080</strong><br>
+        SMS AL 70703 con la palabra SOS espacio y patente del vehículo<br>
+        Países límitrofes: <br>
+        Cobro revertido: 0054 11 41298100<br>
+        Página web: <a href="https://www.redsos.com.ar">www.redsos.com.ar</a><br>
+        Desde Brasil: 800 892-3680<br>
+      </p>
+      </section>
+    </section>
+
+    <section class="dato" id="dato-fedpatronal">
+      <section class="primero">
+        <h4>Emergencias y remolque</h4>
+        <h3 class="white-text">Federación Patronal Seguros</h3>
+        <img class="logos" src="img/logos/fed-patronal.png" alt="Logo de Federación Patronal"><br>
+      </section>
+     <section class="telefonos">
+      <a class="botones-sos" href="tel:08002220022" target="_blank"><i class="fa fa-phone"></i>0800-222-0022</a>
+      <p class="white-text text-center">
+        Segunda opción: 0800-800-022<br>
+        <strong>Atención al asegurado: 0810-222-5588</strong><br>
+        Por Whastapp: +5492214290200<a href="https://wa.me/5492214290200">  Ir al Whastapp</a><br>
+      </p>
+      </section>
+    </section>
+
+    <section class="dato" id="dato-providencia">
+      <section class="primero">
+        <h4>Emergencias y remolque</h4>
+        <h3 class="white-text">Providencia Seguros</h3>
+        <img class="logos" src="img/logos/providencia-seguros.png" alt="Logo de Providencia Seguros"><br>
+      </section>
+     <section class="telefonos">
+      <a class="botones-sos" href="tel:08003450870" target="_blank"><i class="fa fa-phone"></i>08003450870</a>
+      <p class="white-text text-center">
+        <strong>Atención al asegurado: 48577900</strong><br>
+        Por Whastapp: +54969957905<a href="https://wa.me/54969957905">  Ir al Whastapp</a><br>
+      </p>
+      </section>
+    </section>
+
+    <section class="dato" id="dato-zurich">
+      <section class="primero">
+        <h4>Emergencias y remolque</h4>
+        <h3 class="white-text">Zurich Seguros</h3>
+        <img class="logos" src="img/logos/zurich.png" alt="Logo de Zurich"><br>
+      </section>
+     <section class="telefonos">
+      <a class="botones-sos" href="tel:08002221600" target="_blank"><i class="fa fa-phone"></i>08002221600</a>
+      <p class="white-text text-center">
+        <strong>Atención al asegurado: 0800-333-9874 / 0810-999-2424</strong><br>
+      </p>
+      </section>
+    </section>
+
+  </section>
 
 
-    <footer class="page-footer center-on-small-only pt-0 mt-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mb-5 flex-center"><a class="px-3" href="#"><i class="fa fa-facebook fa-lg white-text"></i></a><a class="px-3" href="#"><i class="fa fa-twitter fa-lg white-text"></i></a><a class="px-3" href="#"><i class="fa fa-google-plus fa-lg white-text"></i></a><a class="px-3" href="#"><i class="fa fa-linkedin fa-lg white-text"></i></a></div>
+  <footer class="page-footer center-on-small-only pt-0 mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="mb-5 flex-center">
+            <img src="./img/intense-logo.png" alt="Logo Intense">
           </div>
         </div>
-      </div>
-      <div class="footer-copyright text-center py-3 font-small">
-        <div class="container-fluid">
-          <div>&copy; <a href="undefined/">Material Landing</a> - Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+        <div class="col-md-4 redes">
+          <h4>Sigueme en redes sociales</h4>
+          <div class="row">
+            <a class="isocial" href="https://www.facebook.com/Intense-Broker-de-Seguros-S.A.-de-C.V.-160981608539091/" target="_blank">
+              <i class="fa fa-facebook fa-2x"></i></a>
+
+            <a class="isocial" href="https://www.facebook.com/Intense-Broker-de-Seguros-S.A.-de-C.V.-160981608539091/" target="_blank">
+              <i class="fa fa-instagram fa-2x"></i></a>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="firma text-center">
+            <h4>Jose Villarreal</h4>
+            <p>Asesor de seguros</p>
+            <p>Matrícula Nacional 90523</p>
+         
         </div>
       </div>
-    </footer>
+     
+    </div>
+    <div class="footer-copyright text-center py-3 font-small">
+      <div class="container-fluid">
+        <div>&copy; <a href="undefined/">Material Landing</a> - Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a>
+            Sitio creado por  <a href="https://netcy.ar/" target="_blank">Netcy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
     <script type="text/javascript" src="scripts/jquery.min.js?ver=1.1.0"></script>
     <script type="text/javascript" src="scripts/popper.min.js?ver=1.1.0"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js?ver=1.1.0"></script>
     <script type="text/javascript" src="scripts/wow.min.js?ver=1.1.0"></script>
     <script type="text/javascript" src="scripts/mdb.min.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
     <script>new WOW().init();</script>
   </body>
 </html>
