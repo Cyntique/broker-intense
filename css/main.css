@@ -27,10 +27,11 @@ html {
 
 video#video-fondo{
   position: absolute;
-  top: 10%;
+  top: 16%;
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  background-position: bottom;
 }
 
 #navbar img.logo{
@@ -383,18 +384,22 @@ i.flechas{
 .dato{
   display: none;
 }
-
+/***Footer***/
 
 footer img{
-  max-width: 5rem;
-}
-footer .redes{
-  justify-content: center;
+  max-width: 6rem;
   padding-top: 1rem;
+}
+footer .row{
+ align-items: center;
 }
 
+footer .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}	
 footer .isocial{
-  padding-top: 1rem;
   padding-right: 1rem;
 }
 
