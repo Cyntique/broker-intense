@@ -62,9 +62,12 @@ h5{
 }
 .textos-banner{
   background-color: #00000096;
-  padding-right: 1rem;
   padding-left: 1rem;
- 
+  margin-top: 8rem;
+}
+
+.textos-banner img{
+  max-width: 8rem;
 }
 
 /***especial***/
