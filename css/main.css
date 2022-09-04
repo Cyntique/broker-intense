@@ -45,6 +45,12 @@ video#video-fondo{
 
 /******Mis estilos******/
 
+.text-degradado{
+  background: -webkit-linear-gradient(60deg, #f7b208 0%, #e46802 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}	
+
 main#body-siniestros{
   margin-top: 10rem;
 }
